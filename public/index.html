@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Whirl Chat</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    #chat { padding: 20px; }
+    #messages { list-style: none; padding: 0; }
+    #input { width: 80%; }
+    #form { position: fixed; bottom: 0; width: 100%; background: #f0f0f0; padding: 10px; }
+  </style>
+</head>
+<body>
+  <div id="chat">
+    <p id="status">Connecting...</p>
+    <ul id="messages"></ul>
+  </div>
+  <form id="form" action="">
+    <input id="input" autocomplete="off" /><button>Send</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
